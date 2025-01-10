@@ -1,5 +1,6 @@
 # Vagrant Box Creation and Import Guide  
-This guide explains how to create and import Vagrant boxes for VirtualBox and VMware Workstation. Follow these steps carefully to ensure successful box creation and import.  
+This guide explains how to create and import Vagrant boxes for VirtualBox and VMware Workstation.  
+Follow these steps carefully to ensure successful box creation and import.  
 
 Prerequisites
 > [!NOTE]  
@@ -56,7 +57,7 @@ Add the packaged box to Vagrant locally:
 vagrant box add nixosRHK-vmware vm.box
 ```
 > [!NOTE]
-> Replace <VM_UUID_OR_NAME> with the actual name or UUID of your VirtualBox VM.
-> Replace {user} with your actual username in file paths.
-> Ensure you have sufficient disk space before packaging large VMs.
-> Verify the integrity of your .box files before distribution or usage.
+> Replace <VM_UUID_OR_NAME> with the actual name or UUID of your VirtualBox VM.  
+> Replace {user} with your actual username in file paths.  
+> Ensure you have sufficient disk space before packaging large VMs.  
+> Verify the integrity of your .box files before distribution or usage.  
