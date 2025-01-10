@@ -44,7 +44,7 @@ vagrant up nixos-vbox-offsec
 vagrant up nixos-vmware-offsec
 ```
 
-### Already provided  
+### Already provided (With Offsec Tools)  
 ```
 vagrant up nixOffsec-vbox
 vagrant up nixOffsec-vmware
