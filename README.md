@@ -17,6 +17,9 @@ Our aim here is not to revolutionize anything, but to be as efficient as possibl
 > [!NOTE]  
 > In either case if you modify the vagrantfile in the right way you should be able to either provision yourself with your specific packages, or add packages to the version already provisioned, just modify the configuration files in `modules` folder.  
 
+> [!CAUTION]  
+> For the NixOffsec part, you need at least 40g of available space, the OS alone =  30g, in flexible disk by default I've given it 70g.  
+
 ## Prerequisites  
 Of course, as a prerequisite, you need vagrant and the plugins linked to it.  
 https://developer.hashicorp.com/vagrant/install  
