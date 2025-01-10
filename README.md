@@ -22,13 +22,16 @@ Our aim here is not to revolutionize anything, but to be as efficient as possibl
 
 ## Prerequisites  
 Of course, as a prerequisite, you need vagrant and the plugins linked to it.  
-https://developer.hashicorp.com/vagrant/install  
-For Vmware the desktop plugin are necessary
+> [Vagrant](https://developer.hashicorp.com/vagrant/install)  
+> For Vmware the desktop plugin are necessary
 ```
 vagrant plugin install vagrant-vmware-desktop
 ```
 
 ## Installation  
+You only need the [`Vagrantfile`](./Vagrantfile) and vagrant to install the machines.  
+and in the folder where you had copied the [`Vagrantfile`](./Vagrantfile) you can run one of the following commands, depending on your provider and what you want to do !  
+
 ### Native Nixos
 ```
 vagrant up nixos-vbox
