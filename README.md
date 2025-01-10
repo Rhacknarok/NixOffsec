@@ -59,4 +59,8 @@ The manual box-building method [here](./vagrantBox-construction/README.md).  <im
 Knowing that, the updates are without real risk, and that they are atomic you don't need to recreate the whole thing for each update, even major ones.  
 > [!NOTE]  
 > In fact, you could just do it once and update declaratively, and it would be exactly the same.  
-> That's one of the strength of Nixos: you can now say "it works on my machine" without being insulted.  
+> That's one of the strength of Nixos: you can now say "it works on my machine" without being insulted.
+
+### Credit  
+Inspired by work of [fabaff](https://github.com/fabaff) (thank's a lot for his contribution to the nix security packages 🙏)  
+Also inspired by the nix-community work and in particular the [nixbox project](https://github.com/nix-community/nixbox)  
