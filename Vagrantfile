@@ -57,7 +57,7 @@ end
   config.vm.provision "shell", inline: <<-SHELL
     echo "Rhacknarok Nixos based security tooling provisionning !"
     git clone https://github.com/Rhacknarok/NixOffsec
-    cd nixOffsec
+    cd NixOffsec
     sh install.sh
   SHELL
 end
@@ -79,7 +79,7 @@ end
     config.vm.provision "shell", inline: <<-SHELL
       echo "Rhacknarok Nixos based security tooling provisionning !"
       git clone https://github.com/Rhacknarok/NixOffsec
-      cd nixOffsec
+      cd NixOffsec
       sudo sed -i '/^[[:space:]]*#[[:space:]]*\.\?\/vmware\.nix/s/^[[:space:]]*#//' ./modules/all.nix
       sh install.sh
     SHELL
