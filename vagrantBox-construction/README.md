@@ -4,8 +4,8 @@ Follow these steps carefully to ensure successful box creation and import.
 
 Prerequisites
 > [!NOTE]  
-> VirtualBox and/or VMware Workstation must be installed on your system.
-> Ensure your virtual machine has:
+> VirtualBox and/or VMware Workstation must be installed on your system.  
+> Ensure your virtual machine has:  
 * A unique VMDK file.
 * A cloned version of the VM if necessary (for testing or multiple configurations).
 * You have access to the necessary CLI tools:
