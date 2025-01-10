@@ -1,6 +1,6 @@
 # NixOffsec  
 <p align="center">
-  <img src="./Images/NixOS.svg" width="550" height="160" alt="Nixos Forever" />
+  <img src="./Images/NixOS.png" width="550" height="170" alt="Nixos Forever" />
 </p>  
 
 ## So why this project ?
