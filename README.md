@@ -50,6 +50,13 @@ vagrant up nixOffsec-vbox
 vagrant up nixOffsec-vmware
 ```
 
+## Activate Sliver
+We've added the possibility of installing the C2 [sliver](https://github.com/BishopFox/sliver), you just have to uncomment a few lines in the Vagrantfile.  
+<img src="./Images/sliver-activation.png" align="center" />  
+* It will clone this repository  
+* Overwrite the config files to update the configuration  
+* Install sliver  
+
 ## Our Native Nixos Configuration  
 You can also find our configuration files for the “native” version in the folder [`native-nixos-conf`](./native-nixos-conf).  
 
