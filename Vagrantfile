@@ -130,7 +130,7 @@ end
     echo "Rhacknarok Nixos based security tooling provided !"
     #git clone https://github.com/Rhacknarok/NixOffsec
     #cd NixOffsec
-    #sh install.sh
+    #sh install.sh --force
     #sh sliver.sh
   SHELL
 end
@@ -159,7 +159,7 @@ end
     #git clone https://github.com/Rhacknarok/NixOffsec
     #cd NixOffsec
     #sudo sed -i '/^[[:space:]]*#[[:space:]]*\.\?\/vmware\.nix/s/^[[:space:]]*#//' ./modules/all.nix
-    #sh install.sh
+    #sh install.sh --force
     #sh sliver.sh
   SHELL
   end
