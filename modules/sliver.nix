@@ -8,7 +8,7 @@
       Type = "simple";
       Restart = "on-failure";
       RestartSec = 3;
-      ExecStart = "/root/sliver-server daemon";
+      ExecStart = "/home/vagrant/sliver/sliver-server daemon";
       User = "root";
     };
     startLimitIntervalSec = 0;
