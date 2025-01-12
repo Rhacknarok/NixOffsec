@@ -74,6 +74,7 @@ end
     git clone https://github.com/Rhacknarok/NixOffsec
     cd NixOffsec
     sh install.sh
+    #sh sliver.sh
   SHELL
 end
 
@@ -102,6 +103,7 @@ end
       cd NixOffsec
       sudo sed -i '/^[[:space:]]*#[[:space:]]*\.\?\/vmware\.nix/s/^[[:space:]]*#//' ./modules/all.nix
       sh install.sh
+      #sh sliver.sh
     SHELL
 end
 
@@ -126,6 +128,10 @@ end
 
   config.vm.provision "shell", inline: <<-SHELL
     echo "Rhacknarok Nixos based security tooling provided !"
+    #git clone https://github.com/Rhacknarok/NixOffsec
+    #cd NixOffsec
+    #sh install.sh
+    #sh sliver.sh
   SHELL
 end
 
@@ -150,6 +156,11 @@ end
 
   config.vm.provision "shell", inline: <<-SHELL
     echo "Rhacknarok Nixos based security tooling provided !"
+    #git clone https://github.com/Rhacknarok/NixOffsec
+    #cd NixOffsec
+    #sudo sed -i '/^[[:space:]]*#[[:space:]]*\.\?\/vmware\.nix/s/^[[:space:]]*#//' ./modules/all.nix
+    #sh install.sh
+    #sh sliver.sh
   SHELL
   end
 end

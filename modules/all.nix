@@ -13,7 +13,7 @@
     ./systemPackages.nix
     ./timeLocalSettings.nix
     ./vagrant.nix
-#   ./vmware.nix
-#   ./sliver.nix
+#    ./vmware.nix
+#    ./sliver.nix
   ];
 }

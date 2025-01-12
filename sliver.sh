@@ -121,7 +121,6 @@ else
     exit 3
 fi
 
-
 # Generate local configs
 echo "Generating local configs ..."
 
@@ -141,3 +140,9 @@ for USER_DIR in "${USER_DIRS[@]}"; do
         chown -R "$USER":"$(id -gn "$USER")" "$USER_DIR/.sliver-client/"
     fi
 done
+
+#activate the sliver service
+echo "Activating the Sliver service..."
+sed -i '/^[[:space:]]*#[[:space:]]*\.\?\/sliver\.nix/s/^[[:space:]]*#//' /etc/nixos/modules/all.nix
+nixos-rebuild switch
+systemctl enable sliver.service

@@ -9,9 +9,16 @@ fi
 CONFIG_FILE="/etc/nixos/configuration.nix"
 BOOTLOADER_FILE="./modules/bootloader.nix" 
 BACKUP_DIR="/etc/nixos/backup"
-
 LUKS_PATTERN='boot.initrd.luks.devices.'
 CRYPTO_PATTERN='boot.loader.grub.enableCryptodisk'
+FORCE_FLAG=false
+
+# check if --force flag is present
+for arg in "$@"; do
+  if [ "$arg" == "--force" ]; then
+    FORCE_FLAG=true
+  fi
+done
 
 LUKS_LINES=$(grep "$LUKS_PATTERN" "$CONFIG_FILE")
 BOOTLOADERCRYPTO=$(grep "$CRYPTO_PATTERN" "$CONFIG_FILE")
@@ -82,6 +89,17 @@ else
   exit 1
 fi
 
-mv configuration.nix flake.nix flake.lock modules/ /etc/nixos/
-cd /etc/nixos/
+# cp -r configuration.nix flake.nix flake.lock modules/ /etc/nixos/
+echo "Moving files to /etc/nixos/..."
+if [ "$FORCE_FLAG" = true ]; then
+  # overwrite the files 
+  cp -r configuration.nix flake.nix flake.lock modules/ /etc/nixos/
+  echo "configurations files and folders overwrite in /etc/nixos/"
+else
+  # move file does not overwrite
+  mv configuration.nix /etc/nixos/
+  mv -n flake.nix flake.lock modules/ /etc/nixos/
+  echo "Files moved to /etc/nixos/"
+fi
+
 nixos-rebuild switch
