@@ -103,7 +103,7 @@ if test -f "/root/$SLIVER_SERVER"; then
     mv "/root/$SLIVER_SERVER" /root/sliver-server
 
     echo "Setting permissions for the Sliver server executable..."
-    chmod 750 /root/sliver-server
+    chmod 755 /root/sliver-server
 
     echo "Unpacking the Sliver server..."
     /root/sliver-server unpack --force
@@ -113,7 +113,7 @@ fi
 
 if test -f "/root/$SLIVER_CLIENT"; then
     echo "Setting permissions for the Sliver client executable..."
-    chmod 750 "/root/$SLIVER_CLIENT"
+    chmod 755 "/root/$SLIVER_CLIENT"
 
     echo "Copying the Sliver client executable to /usr/local/bin/sliver-client..."
     cp -vv "/root/$SLIVER_CLIENT" /home/vagrant/
