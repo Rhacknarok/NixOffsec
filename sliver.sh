@@ -14,7 +14,6 @@ sed -i 's#\(\s*\)\./go-assets\.sh#\1sh ./go-assets.sh#g' Makefile
 make
 
 if test -f "./sliver-server"; then
-    echo "Moving the Sliver server executable to /root/sliver-server..."
     echo "Setting permissions for the Sliver server executable..."
     chmod 755 ./sliver-server
 
